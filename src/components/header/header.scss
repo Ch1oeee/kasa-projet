@@ -1,0 +1,40 @@
+.Header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+
+    .navigationLink{
+        display: flex;
+        justify-content: flex-end;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        li { 
+            display: inline-block;
+        }
+
+        a {
+            display: block;
+            padding: 6px 12px;
+            text-decoration: none;
+            color: #ff6060;
+            font-size: 24px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .logoKasa {
+        width: 210px;
+        height: 68px;
+    }
+
+}
