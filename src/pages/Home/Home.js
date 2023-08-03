@@ -2,9 +2,10 @@ import React from 'react'
 import bannerImage from "../../Assets/banner.jpg"
 import data from "../../data.json";
 import home from '../Home/home.scss'
+import Cards from '../../components/Cards/HomeCards';
 
 
-function Home() {
+export default function Home() {
     return(
         <main className="Home">
             <section className="Banner">
@@ -16,12 +17,9 @@ function Home() {
 
             <section>
                 <div className="cardContainer">                
-                    {/* <Cards data={data}/>                 */}
+                    <Cards data={data}/>            
                 </div>
             </section>
         </main>
         )
     }
-
-
-export default Home;

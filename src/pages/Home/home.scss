@@ -1,12 +1,13 @@
 .Home {
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+    padding: 0 70px;
 }
 
 
 .Banner {
-    height: 171px;
+    height: 190px;
     width: 100%;
     overflow: hidden;
     position: relative;
@@ -28,18 +29,18 @@
 
 .BannerQuote {
     margin: 0;
-    padding: 1rem;
+    padding: 15px;
     color: #fff;
-    font-size: 2em;
-    font-style: normal;
+    font-size: 40px;
     font-weight: 500;
     text-align: center;
 }
 
 .cardContainer {
-    width: 100%;
-    height: 830px;
     background-color: #f6f6f6;
     border-radius: 25px;
-
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    padding: 45px;
 }

@@ -3,7 +3,7 @@ import footer from '../footer/footer.scss'
 import logoFooter from '../../Assets/logoFooter.png'
 
 
-function Footer (){
+export default function Footer (){
     return(
         <div className='Footer'>
             <img src={logoFooter} alt='logoKasaNB' className='logoKasaFooter'/>
@@ -12,4 +12,3 @@ function Footer (){
     )
 }
 
-export default Footer;

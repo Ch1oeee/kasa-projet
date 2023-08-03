@@ -3,7 +3,7 @@ import logo from '../../Assets/logo.png'
 import header from '../header/header.scss'
 
 
-function Header() {
+export default function Header() {
   return (
         <span className='Header'>
           <img src ={logo} alt='logo kasa'className='logoKasa'/>
@@ -20,5 +20,3 @@ function Header() {
         </span>
   )
 }
-
-export default Header;
