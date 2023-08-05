@@ -8,7 +8,7 @@ export default function Cards({data}) {
     <>
     {data.map((lot)=>
       <div className="cardPreview" key={lot.id}>
-        <Link to={''} className="cardLink">
+        <Link to={`/lots/${lot.id}`} className="cardLink">
           <img src={lot.cover} alt={lot.title} className="cardCover"/>
           <div className="gradientOverlay"></div>
           <p className="cardTitle">{lot.title}</p>

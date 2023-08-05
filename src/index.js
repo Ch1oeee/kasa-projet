@@ -5,6 +5,7 @@ import Header from './components/header/header';
 import Home from './pages/Home/Home';
 import Footer from './components/footer/footer';
 import index from '../src/index.scss';
+import Logements from './components/UniqueCards/UniqueCards';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +14,7 @@ root.render(
         <Header />
         <Routes>
             <Route path="/"element={<Home />}></Route>
+            <Route path="/lots/:id"element={<Logements/>} />
         </Routes>
         <Footer />
     </Router>
