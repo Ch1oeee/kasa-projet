@@ -3,15 +3,16 @@ import HomeCards from '../Cards/HomeCards.scss'
 import data from '../../data.json'
 import { Link } from 'react-router-dom';
 
+
 export default function Cards({data}) {
   return (
     <>
-    {data.map((lot)=>
-      <div className="cardPreview" key={lot.id}>
-        <Link to={`/lots/${lot.id}`} className="cardLink">
-          <img src={lot.cover} alt={lot.title} className="cardCover"/>
+    {data.map((house)=>
+      <div className="cardPreview" key={house.id}>
+        <Link to={`/houses/${house.id}`} className="cardLink">
+          <img src={house.cover} alt='images appartement' className="cardCover"/>
           <div className="gradientOverlay"></div>
-          <p className="cardTitle">{lot.title}</p>
+          <p className="cardTitle">{house.title}</p>
         </Link>
       </div>)
     }

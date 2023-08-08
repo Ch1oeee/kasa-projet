@@ -5,7 +5,7 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import Carousel from '../Carrousel/Carousel';
 import { useParams } from "react-router-dom";
-//import Collapsible from '../Collapse/Collapse';
+import  Collapsing from '../Collapse/Collapse'
 
 export default function Logements () {
 
@@ -37,7 +37,7 @@ export default function Logements () {
         </div>
 
         <div id="Bottom">
-            {/* < Collapsible /> */}
+            <Collapsing description={house.description} />
         </div>
 
       </div>
