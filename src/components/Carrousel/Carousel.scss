@@ -1,54 +1,46 @@
-.carousel {
-position: relative;
+.ImageCarousel{
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  
+}
+
+button{
+  background: transparent;
+  border: none;
+  position: absolute;
+
+}
+
+.image-counter{
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: 0%;
+  color: #FFFFFF;
+  font-size: 18px;
+  font-weight: 500;
+
+}
+
+.carousel{
+  width: 1240px;
   height: 415px;
   border-radius: 25px;
-  overflow: hidden;
-  }
-  
-  .ImageCarousel {
-    width: 100%;
-    height: 415px;
-    object-fit: cover;
-  }
-  
-  .image-number {
-    text-align: center;
-  color: red;
-  font-size: 18px;
-  position: absolute;
-  bottom: 10px;
-  }
-  
-  .ImageOverlay {
-    position: absolute;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    align-items: center
-    
-  }
-  
-  .arrows {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-   // text-align: center;
-    //align-items: center;
-    
-  }
-  
-  .btnCarousel {
-    background-color: red;
-    border: none;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    object-fit: contain;
-  }
+  position: relative;
+  display: flex;
+  z-index: 1;
+
+}
+
+.right{
+  transform: translateY(-50%);
+  right: 0px;
+  top: 50%;
+}
+
+.left{
+  transform: translateY(-50%);
+  left: 0px;
+  top: 50%;
+}

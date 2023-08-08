@@ -20,20 +20,20 @@ export default function Carousel({ images }) {
     
       return (
         <div className="carousel">
-          <div className="carousel-container">
-            <img className='ImageCarousel' src={images[currentImageIndex]} alt='photo apartement' />
-          </div>
-          <div className='ImageOverlay'>
-            <div className="arrows">
-                <button className='btnCarousel' onClick={PrevImage}>
-                <img src={ArrowPrev} alt="previous"/>
-                </button>
-                <button className='btnCarousel' onClick={NextImage}>
-                <img src={ArrowNext} alt="next"/>
-                </button>
-            </div>
+          
+          <button className='btnCarousel left' onClick={PrevImage}>
+            <img src={ArrowPrev} alt="previous"/>
+          </button>
+          <button className='btnCarousel right' onClick={NextImage}>
+            <img src={ArrowNext} alt="next"/>
+          </button>
+            
+          <img className='ImageCarousel' src={images[currentImageIndex]} alt='photo apartement' />
+          
+          <div className='image-counter'>
             <p className="image-number">{`${currentImageIndex + 1}/${images.length}`}</p>
           </div>
+
         </div>
       );
   }

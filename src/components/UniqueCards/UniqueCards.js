@@ -5,34 +5,41 @@ import Header from '../header/header';
 import Footer from '../footer/footer';
 import Carousel from '../Carrousel/Carousel';
 import { useParams } from "react-router-dom";
+//import Collapsible from '../Collapse/Collapse';
 
 export default function Logements () {
 
     const { id } = useParams();
-    const lot = data.find(lot => lot.id === id);
+    const house = data.find(house => house.id === id);
 
     return (
-    <div className="card-details">
-    <Carousel images={lot.pictures} />    
-      <div className="display-row">
-        <div className="display-colum">
-        <h2 className="lots-title">{lot.title}</h2>
-        <div className="lots-location">{lot.location}</div>
-      </div>
+      <div className="card-details">
 
-      <div className="display-colum">
-        <div className="lots-host">
-          <p className="host-name">{lot.host.name}</p>
-          <img className="host-picture" src={lot.host.picture} alt={lot.host.name}/>
+        <Carousel images={house.pictures} />   
+
+        <div className='Top'>
+          <div className="title">
+            <h2 className="house-title">{house.title}</h2>
+            <h3 className="house-location">{house.location}</h3>
+          </div>
+          
+          <div className="house-host">
+            <p className="host-name">{house.host.name}</p>
+            <img className="host-picture" src={house.host.picture} alt={house.host.name}/>
+          </div>
+
+          <div className="house-tags">
+            {house.tags.map((tags)=>
+            <button key={tags}>{tags}</button>)}
+          </div>
+
+          {/* <Ratings /> */}
         </div>
-       </div>
+
+        <div id="Bottom">
+            {/* < Collapsible /> */}
+        </div>
+
       </div>
-      <div className="display-row">
-        <div className="lots-tags">
-              {lot.tags.map((tags)=>
-                <button key={tags}>{tags}</button>)}
-              </div>
-      </div>
-      </div>
-      );
+    );
 }

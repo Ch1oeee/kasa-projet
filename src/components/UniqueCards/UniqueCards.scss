@@ -1,0 +1,64 @@
+.card-details{
+    padding: 0 70px;
+    overflow: hidden
+}
+
+.title{
+    width: 900px;
+
+    .house-title {
+        font-size: 36px;
+        font-weight: 500;
+        color: #ff6060;
+        margin-bottom: 0px;
+    }
+    .house-location{
+        font-size: 18px;
+        color: #ff6060;
+        margin-top: 0px;
+        font-weight: 500;
+    }
+}
+
+.house-host {
+    width: auto;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    margin: 0px;
+
+    .host-name{
+        font-size: 18px;
+        color: #ff6060;
+        text-align: right;
+    }
+
+    .host-picture{
+        height: 64px;
+        width: 64px;
+        border-radius: 50%;
+    }
+}
+
+.house-tags {
+    display: flex;
+    gap: 10px;
+    width: 650px;
+
+    button {
+        background: #FF6060;
+        border : none;
+        border-radius: 10px;
+        color: #fff;
+        width: 115px;
+        height: 25px;
+    }
+}
+
+.Top {
+    width: 1240px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
