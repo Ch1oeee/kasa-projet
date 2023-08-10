@@ -9,7 +9,7 @@ export default function Cards({data}) {
     <>
     {data.map((house)=>
       <div className="cardPreview" key={house.id}>
-        <Link to={`/houses/${house.id}`} className="cardLink">
+        <Link to={`/logements/${house.id}`} className="cardLink">
           <img src={house.cover} alt='images appartement' className="cardCover"/>
           <div className="gradientOverlay"></div>
           <p className="cardTitle">{house.title}</p>
