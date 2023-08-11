@@ -43,9 +43,11 @@
 
 .house-tags {
     display: flex;
+    flex-direction: column;
     gap: 10px;
-    width: 650px;
+    width: 800px;
     height: 25px;
+    flex-wrap: wrap;
 
     button {
         background: #FF6060;

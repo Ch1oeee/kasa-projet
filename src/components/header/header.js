@@ -6,7 +6,7 @@ import header from '../header/header.scss'
 export default function Header() {
   return (
         <span className='Header'>
-          <img src ={logo} alt='logo kasa'className='logoKasa'/>
+          <Link to="/"> <img src ={logo} alt='logo kasa'className='logoKasa'/> </Link> 
             <nav className='navigationLink'>
               <ul>
                 <li>

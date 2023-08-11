@@ -4,6 +4,7 @@ import UniqueCards from '../UniqueCards/UniqueCards.scss'
 import Carousel from '../Carrousel/Carousel';
 import { useParams, Navigate } from "react-router-dom";
 import  Collapsing from '../Collapse/Collapse'
+import StarRating from '../Ratings/ratings';
 
 export default function Logements () {
 
@@ -35,7 +36,9 @@ export default function Logements () {
             <button key={tags}>{tags}</button>)}
           </div>
 
-          {/* <Ratings /> */}
+          <div>
+          <StarRating id={id} />
+          </div>
         </div>
 
         <div id="Bottom">
