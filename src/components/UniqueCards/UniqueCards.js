@@ -14,6 +14,7 @@ export default function Logements () {
     if (!logement) {
       return <Navigate to="/404" />;
     }
+
   
     return (
       <div className="card-details">
@@ -33,7 +34,7 @@ export default function Logements () {
 
           <div className="house-tags">
             {logement.tags.map((tags)=>
-            <button key={tags}>{tags}</button>)}
+            <button className='tags' key={tags}>{tags}</button>)}
           </div>
 
           <div>

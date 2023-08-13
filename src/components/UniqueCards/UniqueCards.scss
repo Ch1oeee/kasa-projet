@@ -43,19 +43,17 @@
 
 .house-tags {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 800px;
-    height: 25px;
-    flex-wrap: wrap;
+    gap: 10px;    
 
-    button {
-        background: #FF6060;
-        border : none;
-        border-radius: 10px;
+    .tags {
         color: #fff;
-        width: 115px;
+        background: #FF6060;
+        width: auto;
         height: 25px;
+        border-radius: 10px;
+        border: none;
+        font-size: 14px;   
+        padding: 3px 30px; 
     }
 }
 
