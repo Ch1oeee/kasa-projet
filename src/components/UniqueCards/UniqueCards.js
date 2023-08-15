@@ -6,6 +6,7 @@ import { useParams, Navigate } from "react-router-dom";
 import  Collapsing from '../Collapse/Collapse'
 import StarRating from '../Ratings/ratings';
 
+
 export default function Logements () {
 
     const { id } = useParams();
@@ -42,8 +43,10 @@ export default function Logements () {
           </div>
         </div>
 
-        <div id="Bottom">
-            <Collapsing description={logement.description} />
+        <div className="Bottom">
+            <Collapsing label="Description" index={1} description={logement.description} />
+            <Collapsing label="Équipements" index={2} content={null} equipments={logement.equipments} />
+
         </div>
 
       </div>

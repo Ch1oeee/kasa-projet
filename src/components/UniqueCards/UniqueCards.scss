@@ -65,5 +65,16 @@
 }
 
 .Bottom {
-    padding-top: 30px;
+    display: flex;
+   // flex-direction: row;
+   // gap: 75px;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    .collapsible {
+        flex: 1;
+        width: 600px; 
+    }
+  
 }

@@ -7,6 +7,7 @@ import Footer from './components/footer/footer';
 import index from '../src/index.scss';
 import Logements from './components/UniqueCards/UniqueCards';
 import NotFound from './pages/Home/404/404';
+import About from './pages/About/about';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -16,6 +17,7 @@ root.render(
         <Routes>
             <Route path="/"element={<Home />}></Route>
             <Route path="/logements/:id"element={<Logements/>} />
+            <Route path='/A_propos' element={<About />} />
             <Route path='*' element={<NotFound />}/>
 
         </Routes>
