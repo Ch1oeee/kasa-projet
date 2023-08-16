@@ -5,7 +5,6 @@
 
 .collapsible {
   overflow: hidden;
-  font-weight: 500;
 
   .label-collapse{
     position: relative;
@@ -29,6 +28,7 @@
       height: 32px;
       transition: all 0.3s ease;
       padding-top: 5px;
+      transform: rotate(270deg);
     
     }
   }
@@ -45,7 +45,6 @@
   top: 15px;
   width: 18px;
   height: 18px;
-  background: url(../../Assets/arrow_forward.png) no-repeat 0 0 ;
   transition: all 0.3s ease;
 }
 
@@ -68,11 +67,11 @@
   max-height: 300px;
   padding-bottom: 15px;
   background: #F6F6F6;
-  box-shadow: 0 5px 11px 0px rgba(0,0,0, .1), 0 4px 11px 0 rgba(0,0,0, .08);
   opacity: 1;
   top: 0;
   font-weight: 400;
   font-size: 18px;
+  border-radius: 10px;
 
   ul{
     color: #FF6060;
