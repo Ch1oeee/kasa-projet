@@ -5,7 +5,7 @@ import Header from './components/header/header';
 import Home from './pages/Home/Home';
 import Footer from './components/footer/footer';
 import index from '../src/index.scss';
-import Logements from './components/UniqueCards/UniqueCards';
+import Logements from './components/CardLogement/Logement';
 import NotFound from './pages/Home/404/404';
 import About from './pages/About/about';
 

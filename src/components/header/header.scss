@@ -38,3 +38,39 @@
     }
 
 }
+
+
+@media screen and (max-width: 768px) {
+
+    .Header{
+        padding: 20px;
+        width: fit-content;
+        overflow: hidden;
+        gap: 40px;
+        
+        .logoKasa{
+            width: 145px;
+            height: 45px;
+        }
+
+        .navigationLink{
+
+            a {
+                font-size: 12px;
+                text-transform: uppercase;
+                padding: 0;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                gap: 25px;
+            }
+        }
+    
+
+    }
+
+
+}

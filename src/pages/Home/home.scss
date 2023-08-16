@@ -5,7 +5,6 @@
     padding: 0 70px;
 }
 
-
 .Banner {
     height: 190px;
     width: 100%;
@@ -43,4 +42,45 @@
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     padding: 45px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .Home{
+        padding: 0 20px;
+        gap: 20px;
+        overflow: hidden;
+
+        .Banner{
+            height: 110px;
+
+            img {
+                border-radius: 10px;
+            }
+
+            .BannerOverlay{
+                bottom: 15px;
+                object-fit: fill;
+            }
+
+            .BannerQuote{
+                font-size: 24px;
+                text-align: left;
+                width: 217px;
+
+            }
+        }
+
+        .cardContainer{
+            background-color: white;
+            display: grid;
+            grid-template-columns: auto;
+            grid-gap: 20px;
+            padding: 0;
+        }
+    }
+
+    
+
 }

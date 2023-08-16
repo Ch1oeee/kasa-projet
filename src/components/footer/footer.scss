@@ -7,6 +7,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 
     margin-top: 40px;
 
@@ -19,5 +20,19 @@
     .logoKasaFooter {
         height: 40px;
         width: auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Footer {
+        margin-top: 20px;
+        
+
+        .FooterQuote{
+            font-size: 12px;
+            width: 130px;
+            align-items: center;
+            text-align: center;
+        }
     }
 }

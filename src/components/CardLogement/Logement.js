@@ -1,6 +1,6 @@
 import React from 'react'
 import data from "../../data.json";
-import UniqueCards from '../UniqueCards/UniqueCards.scss'
+import logement from './Logement.scss'
 import Carousel from '../Carrousel/Carousel';
 import { useParams, Navigate } from "react-router-dom";
 import  Collapsing from '../Collapse/Collapse'
