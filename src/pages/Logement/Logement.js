@@ -1,10 +1,10 @@
 import React from 'react'
 import data from "../../data.json";
 import logement from './Logement.scss'
-import Carousel from '../Carrousel/Carousel';
+import Carousel from '../../components/Carrousel/Carousel';
 import { useParams, Navigate } from "react-router-dom";
-import  Collapsing from '../Collapse/Collapse'
-import StarRating from '../Ratings/ratings';
+import  Collapsing from '../../components/Collapse/Collapse'
+import StarRating from '../../components/Ratings/ratings';
 
 
 export default function Logements () {
@@ -45,7 +45,7 @@ export default function Logements () {
 
         <div className="Bottom">
             <Collapsing label="Description" index={1} description={logement.description} />
-            <Collapsing label="Équipements" index={2} content={null} equipments={logement.equipments} />
+            <Collapsing label="Équipements" index={2} equipments={logement.equipments} />
 
         </div>
 

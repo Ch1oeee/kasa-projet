@@ -4,6 +4,7 @@
     align-items: center;
     flex-direction: column;
     color: #FF6060;
+    text-align: center;
 
     .code {
         font-size: 288px;
@@ -23,5 +24,29 @@
         padding: 60px 0;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+
+    .Error{
+        gap: 113px;
+        padding: 113px 0;
+
+
+        .code{
+            font-size: 96px;
+        }
+
+        .text-error{
+            font-size: 18px;
+            margin: 0;
+            width: 260px;
+        }
+
+        .Redirect {
+            font-size: 14px;
+            padding: 0;
+        }
+    }
 }
 

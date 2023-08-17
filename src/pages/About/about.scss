@@ -19,3 +19,19 @@
     width: 1023px;
     margin: 0 auto;
 }
+
+@media screen and (max-width: 768px) {
+
+    .about-page{
+        padding: 0 20px;
+
+        .about-banner {
+    
+            img{
+                border-radius: 10px;
+            }
+        }
+    }
+
+
+}
