@@ -10,3 +10,13 @@
 .rating .filled {
     color: #FF6060; 
 }
+
+@media screen and (max-width: 768px) {
+    .rating {
+        font-size: 15px;
+
+        svg {
+            padding: 0 3px;
+        }
+    }
+}

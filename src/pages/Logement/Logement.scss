@@ -3,71 +3,83 @@
     overflow: hidden
 }
 
-.title{
-    width: 900px;
-
-    .house-title {
-        font-size: 36px;
-        font-weight: 500;
-        color: #ff6060;
-        margin-bottom: 0px;
-    }
-    .house-location{
-        font-size: 18px;
-        color: #ff6060;
-        margin-top: 0px;
-        font-weight: 500;
-    }
-}
-
-.house-host {
-    width: auto;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    gap: 10px;
-    margin: 0px;
-
-    .host-name{
-        font-size: 18px;
-        color: #ff6060;
-        text-align: right;
-    }
-
-    .host-picture{
-        height: 64px;
-        width: 64px;
-        border-radius: 50%;
-    }
-}
-
-.house-tags {
-    display: flex;
-    gap: 10px;    
-
-    .tags {
-        color: #fff;
-        background: #FF6060;
-        width: auto;
-        height: 25px;
-        border-radius: 10px;
-        border: none;
-        font-size: 14px;   
-        padding: 3px 30px; 
-    }
-}
-
 .Top {
-    width: 1240px;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 20px;
+
+    .Top-left {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        .title{
+            .house-title {
+                font-size: 36px;
+                font-weight: 500;
+                color: #ff6060;
+                margin: 0;
+            }
+            .house-location{
+                font-size: 18px;
+                color: #ff6060;
+                margin: 0;
+                font-weight: 500;
+            }
+        }
+
+        .house-tags {
+            display: flex;
+            gap: 10px;    
+        
+            .tags {
+                color: #fff;
+                background: #FF6060;
+                width: auto;
+                height: 25px;
+                border-radius: 10px;
+                border: none;
+                font-size: 14px;   
+                padding: 3px 30px; 
+            }
+        }
+    }
+
+    .Top-right {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+
+        .house-host {
+            width: auto;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 10px;
+        
+            .host-name{
+                font-size: 18px;
+                color: #ff6060;
+                text-align: right;
+                flex-wrap: wrap;
+                width: 90px;
+                display: flex;
+            }
+        
+            .host-picture{
+                height: 64px;
+                width: 64px;
+                border-radius: 50%;
+            }
+        }
+    }
 }
 
 .Bottom {
     display: flex;
-   // flex-direction: row;
-   // gap: 75px;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
@@ -77,4 +89,84 @@
         width: 600px; 
     }
   
+}
+
+@media screen and (max-width: 768px) {
+    .card-details {
+        padding: 0 20px;
+    }
+
+    .Top {
+        width: 100%;
+        padding: 15px 0;
+        gap: 15px;
+
+        .Top-left {
+            gap: 10px;
+
+            .title{
+                .house-title{
+                    font-size: 18px;
+                    padding-bottom: 5px;
+                }
+        
+                .house-location {
+                    font-size: 14px;
+                }
+            }
+            
+            .house-tags{
+                .tags{
+                    height: 18px;
+                    font-size: 10px;
+                    border-radius: 5px;
+                    padding: 3px 20px; 
+                }
+            }
+        }
+
+        .Top-right {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            align-items: center;
+
+            .house-host {
+        
+                .host-name{
+                    font-size: 12px;
+                    width: 50px;
+                }
+            
+                .host-picture{
+                    height: 32px;
+                    width: 32px;
+                }
+            }
+        }
+    }
+
+    .Bottom {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .collapsible .label-collapse {
+        width: 315px;
+    }
+
+    .collapsible input:checked ~ .collapsible-text {
+        width: 335px;
+    }
+
+    .collapsible-text p {
+        font-size: 12px;
+    }
+
+    .collapsible-text ul {
+        font-size: 12px;
+    }
+   
 }

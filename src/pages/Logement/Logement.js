@@ -23,24 +23,30 @@ export default function Logements () {
         <Carousel images={logement.pictures} />   
 
         <div className='Top'>
-          <div className="title">
-            <h2 className="house-title">{logement.title}</h2>
-            <h3 className="house-location">{logement.location}</h3>
-          </div>
-          
-          <div className="house-host">
-            <p className="host-name">{logement.host.name}</p>
-            <img className="host-picture" src={logement.host.picture} alt={logement.host.name}/>
+
+          <div className='Top-left'>
+            <div className="title">
+              <h2 className="house-title">{logement.title}</h2>
+              <h3 className="house-location">{logement.location}</h3>
+            </div>
+
+            <div className="house-tags">
+              {logement.tags.map((tags)=>
+              <button className='tags' key={tags}>{tags}</button>)}
+            </div>
           </div>
 
-          <div className="house-tags">
-            {logement.tags.map((tags)=>
-            <button className='tags' key={tags}>{tags}</button>)}
+          <div className='Top-right'>
+            <div className="house-host">
+              <p className="host-name">{logement.host.name}</p>
+              <img className="host-picture" src={logement.host.picture} alt={logement.host.name}/>
+            </div>
+
+            <div className='rating'>
+            <StarRating id={id} />
+            </div>
           </div>
 
-          <div>
-          <StarRating id={id} />
-          </div>
         </div>
 
         <div className="Bottom">

@@ -1,6 +1,6 @@
 .wrapper {
   display: flex;
-  padding-top: 20px;
+  //padding-top: 20px;
 }
 
 .collapsible {
@@ -19,12 +19,11 @@
     //margin-bottom: 10px;
     cursor: pointer;
     padding: 10px 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     z-index: 1;
     height: 30px;
     
     .arrow-icon { 
-      width: 32px;
       height: 32px;
       transition: all 0.3s ease;
       padding-top: 5px;
