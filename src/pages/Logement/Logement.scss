@@ -154,18 +154,16 @@
     }
 
     .collapsible .label-collapse {
-        width: 315px;
+        width: 100%;
+        box-sizing: border-box;
+        height: auto;
     }
 
-    .collapsible input:checked ~ .collapsible-text {
-        width: 335px;
+    .wrapper {
+        width: 100%;
     }
 
-    .collapsible-text p {
-        font-size: 12px;
-    }
-
-    .collapsible-text ul {
+    .collapsible-text p, ul {
         font-size: 12px;
     }
    
