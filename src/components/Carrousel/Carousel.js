@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { useParams } from "react-router-dom"
 import Carousell from '../Carrousel/Carousel.scss'
 import data from '../../data.json'
 import ArrowNext from '../../Assets/arrow_forward.png'
@@ -17,6 +16,14 @@ export default function Carousel({ images }) {
           prevIndex === 0 ? images.length - 1 : prevIndex - 1
         );
       };
+
+      if (images.length === 1) {
+        return (
+            <div className="carousel">
+                <img className='ImageCarousel' src={images[currentImageIndex]} alt='photo apartement' />
+            </div>
+        );
+      }
     
       return (
         <div className="carousel">

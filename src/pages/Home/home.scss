@@ -24,16 +24,18 @@
     bottom: 50px;
     width: 100%;
     z-index: 1;
+    
+    .BannerQuote {
+        margin: 0;
+        padding: 15px;
+        color: #fff;
+        font-size: 40px;
+        font-weight: 500;
+        text-align: center;
+    }
 }
 
-.BannerQuote {
-    margin: 0;
-    padding: 15px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: 500;
-    text-align: center;
-}
+
 
 .cardContainer {
     background-color: #f6f6f6;
