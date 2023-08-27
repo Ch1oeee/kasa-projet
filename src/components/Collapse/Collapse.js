@@ -19,7 +19,7 @@ export default function Collapsing ({label, description, equipments, content, in
                 <div className='collapsible'>
                     <input type='checkbox' id={collapsibleId} checked={isCollapsibleOpen}
                     onChange={toggleCollapsible}></input>
-                    <label for={collapsibleId} className='label-collapse'>
+                    <label htmlFor={collapsibleId} className='label-collapse'>
                     {label} <img src={ArrowNext} alt='arrow-collapse' className='arrow-icon' />
                     </label>                    
                     <div className='collapsible-text'>
